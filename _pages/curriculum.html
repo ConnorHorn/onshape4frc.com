@@ -28,7 +28,7 @@ comments: false
             </tr>
             {% for week in site.data.FRC3005SummerOnshape %}
             {% assign d = week[1] %}
-            <tr onclick="showWeek({{ week[0] }})">
+            <tr onclick="showWeek({{ week[0] }})" style="cursor: pointer">
                 <td>{{ week[0] }}</td>
                 <td>{{ d.engTopic }}</td>
                 <td>{{ d.cotsHighlight }}</td>
